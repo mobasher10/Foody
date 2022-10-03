@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #f54748;
+  --secondary-color: #354456;
+  --tertiary-color: #636363;
+  --bg-color: #fef5f5;
+  --white: #fff;
+  --yellow: #f2c94c;
+  --normal-fw: 400;
+  --secondary-fw: 500;
+  --big-fw: 600;
+  --very-big-fw: 700;
+  --normal-line-height: 25px;
+  --big-line-height: 40px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  font-weight: var(--normal-fw);
+  background: linear-gradient(
+    180.48deg,
+    rgba(245, 76, 77, 0.2) -624.87%,
+    rgba(240, 104, 104, 0.2) -241.18%,
+    rgba(229, 172, 173, 0.282272) 9.66%,
+    rgba(217, 217, 217, 0) 65.35%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: var(--normal-line-height);
+}
+img {
+  width: 100%;
+}
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+/* **************** REUSIABLE CSS CLASSES *************** */
+.tertiary__header {
+  font-weight: var(--big-fw);
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.secondary__header {
+  font-weight: var(--secondary-fw);
+  font-size: 2.5rem;
+  line-height: var(--big-line-height);
+  color: var(--secondary-color);
+  margin-top: 3rem;
+}
+
+/* **************** HEADER & NAV START *************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  position: relative;
+}
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in;
+  z-index: 100;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: var(--big-fw);
+}
+
+.nav__open .navbar {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.hamburger__menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 999;
+}
+.hamburger__menu-close {
+  display: none;
+}
+.nav__open .hamburger__menu-close {
+  display: block;
+}
+.nav__open .hamburger__menu-open {
+  display: none;
+}
+/* **************** HEADER END *************** */

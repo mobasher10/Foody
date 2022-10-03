@@ -1,0 +1,302 @@
+/* *************** SECTION HERO START  ***************** */
+.section__hero {
+  padding: 0 3rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.primary__header {
+  font-weight: var(--big-fw);
+  font-size: 3rem;
+  line-height: var(--big-line-height);
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: var(--secondary-color);
+  margin-top: 3rem;
+}
+.main__header-span {
+  color: var(--primary-color);
+}
+.main-desc {
+  font-weight: var(--secondary-color);
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 2rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.hero__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+.btn__main {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.btn__secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+.btn__secondary-img {
+  width: 4rem;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 1rem;
+  box-shadow: 1px 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.customers {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+.customer__imgs {
+  display: flex;
+}
+.customer__imgs img {
+  margin-right: -1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+.customers__header {
+  font-weight: var(--big-fw);
+}
+.customers__review {
+  font-weight: var(--normal-fw);
+  color: var(--tertiary-color);
+  text-align: center;
+}
+/* *************** SECTION HERO END  ***************** */
+
+/* *************** SECTION SERVICE START  ***************** */
+
+.section__service {
+  margin-top: 10rem;
+  padding: 0 3rem;
+}
+.service {
+  margin-top: 5rem;
+}
+
+.service__icon {
+  width: 9rem;
+}
+.service__header {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: var(--big-fw);
+  margin-top: 1rem;
+}
+.service__text {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+/* *************** SECTION SERVICE END  ***************** */
+
+/* *************** SECTION MENU START  ***************** */
+
+.section__menu {
+  margin-top: 10rem;
+  padding: 7rem 3rem;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.food__menu-card {
+  box-shadow: 1px 0 30px 1px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.discount {
+  font-size: 1.8rem;
+  font-weight: var(--big-fw);
+  background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  max-width: max-content;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  color: var(--white);
+}
+.food__menu-img {
+  margin-top: 3rem;
+}
+.food__menu-rate {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+}
+.food__menu-card__header {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  font-weight: var(--big-fw);
+  margin-top: 1rem;
+}
+.food__menu-card__price {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.card__price-span-1 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: var(--secondary-fw);
+}
+.card__price-span-2 {
+  color: var(--yellow);
+  font-weight: var(--big-fw);
+}
+/* *************** SECTION MENU END  ***************** */
+
+/* *************** SECTION TESTIMONIALS START  ***************** */
+.section__testimonials {
+  margin-top: 10rem;
+  padding: 0 3rem;
+}
+.testimonial {
+  margin-top: 3rem;
+}
+.testimonial__text {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: var(--big-fw);
+  color: var(--tertiary-color);
+  margin-top: 2rem;
+}
+.author__job {
+  font-weight: 1.2rem;
+  font-weight: var(--normal-fw);
+}
+.author__review {
+  display: flex;
+  gap: 1rem;
+}
+.testimonial__author img {
+  width: 7rem;
+}
+/* *************** SECTION TESTIMONIALS END  ***************** */
+
+/* *************** SECTION APP START  ***************** */
+.section__app {
+  margin-top: 10rem;
+  padding: 0 3rem;
+}
+.app__container {
+  background-color: #fef5f5;
+  border-radius: 2rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.app__detail {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+.store__images {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.store__img {
+  width: 20rem;
+}
+.app__mockup {
+  width: 18rem;
+  margin-top: 5rem;
+}
+/* *************** SECTION APP END  ***************** */
+
+/* *************** SECTION FOOTER START  ***************** */
+.section__footer {
+  padding: 5rem 3rem;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.footer__logo {
+  width: 12rem;
+}
+.footer__detail {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__col-header {
+  font-size: 1.8rem;
+  font-weight: var(--big-fw);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+.footer__col-link {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  font-weight: var(--secondary-fw);
+}
+.footer__col-contact-question {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  font-weight: var(--secondary-fw);
+}
+
+label {
+  position: relative;
+  max-width: 30rem;
+}
+input {
+  position: absolute;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 20rem;
+  border: 1px solid var(--secondary-color);
+}
+.submit__btn {
+  position: absolute;
+  top: 1px;
+  right: 0.5rem;
+  border: none;
+  background: none;
+  pointer-events: all;
+}
+.submit__icon {
+  width: 3rem;
+  pointer-events: none;
+}
+/* *************** SECTION FOOTER END  ***************** */
