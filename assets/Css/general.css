@@ -26,17 +26,27 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   font-weight: var(--normal-fw);
-  background: linear-gradient(
-    180.48deg,
-    rgba(245, 76, 77, 0.2) -624.87%,
-    rgba(240, 104, 104, 0.2) -241.18%,
-    rgba(229, 172, 173, 0.282272) 9.66%,
-    rgba(217, 217, 217, 0) 65.35%
-  );
-  background-repeat: no-repeat;
   min-height: 100vh;
   overflow-x: hidden;
   line-height: var(--normal-line-height);
+}
+body::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40rem;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 76, 77, 0.48) -144.05%,
+    rgba(240, 104, 104, 0.48) -72.83%,
+    rgba(229, 172, 173, 0.1) 4.03%,
+    rgba(217, 217, 217, 0) 113.75%
+  );
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 img {
   width: 100%;
@@ -49,6 +59,9 @@ button {
 ul,
 li {
   list-style: none;
+}
+img {
+  pointer-events: none;
 }
 /* **************** REUSIABLE CSS CLASSES *************** */
 .tertiary__header {
@@ -65,14 +78,20 @@ li {
   color: var(--secondary-color);
   margin-top: 3rem;
 }
+.hidden {
+  display: none;
+}
 
 /* **************** HEADER & NAV START *************** */
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3rem;
   position: relative;
+  height: 7rem;
+  z-index: 99999;
 }
 .navbar {
   position: fixed;
@@ -126,5 +145,18 @@ li {
 }
 .nav__open .hamburger__menu-open {
   display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgb(0 0 0 / 3%);
 }
 /* **************** HEADER END *************** */

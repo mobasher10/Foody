@@ -49,7 +49,7 @@
 
   <!-- *************** HERO SECTION START*************** -->
   <section class="section__hero">
-    <div class="hero__text">
+    <div class="hero__text-cont">
       <h3 class="tertiary__header">MORE THAN FASTER 🍒</h3>
       <h1 class="primary__header">
         Fastest Delivery & Easy <span class="main__header-span">Pickup</span>
@@ -72,7 +72,7 @@
           <img src="./assets/Images/testmonial-3.png" class="customer__img"></img>
         </div>
         <p class="customers__header">
-          <span class="customers__header">
+          <span>
             Our Happy customers</span>
           <span class="customers__review">
             ⭐4.8 (12.5k Reviews)</span>
@@ -80,7 +80,8 @@
       </div>
     </div>
     <div class="hero__img-cont">
-      <img src="./assets/Images/Hero image.png" alt="hero image" />
+      <img src="./assets/Images/Hero-image-mobile.png" alt="hero image" class="hero-img-mob" />
+      <img src="./assets/Images/Hero image.png" alt="hero image" class="hidden hero-img-des" />
     </div>
   </section>
   <!-- *************** HERO SECTION END*************** -->
@@ -89,24 +90,26 @@
   <section class="section__service">
     <h3 class="tertiary__header">WHAT WE SERVE</h3>
     <h2 class="secondary__header">Your Favorite Food Delivery Partner</h2>
-    <div class="service">
-      <img src="./assets/Images/moto cycle.svg" alt="icon" class="service__icon" />
-      <p class="service__header">Free Delivery</p>
-      <p class="service__text">Delivery that is always ontime even faster</p>
-    </div>
+    <div class="services__container">
+      <div class="service">
+        <img src="./assets/Images/moto cycle.svg" alt="icon" class="service__icon" />
+        <p class="service__header">Free Delivery</p>
+        <p class="service__text">Delivery that is always ontime even faster</p>
+      </div>
 
-    <div class="service">
-      <img src="./assets/Images/order.svg" alt="icon" class="service__icon" />
-      <p class="service__header">Easy To Order</p>
-      <p class="service__text">Delivery that is always ontime even faster</p>
-    </div>
+      <div class="service">
+        <img src="./assets/Images/order.svg" alt="icon" class="service__icon" />
+        <p class="service__header">Easy To Order</p>
+        <p class="service__text">Delivery that is always ontime even faster</p>
+      </div>
 
-    <div class="service">
-      <img src="./assets/Images/best quality.svg" alt="icon" class="service__icon" />
-      <p class="service__header">Best Quality</p>
-      <p class="service__text">
-        Not only fast for us quality is also number one
-      </p>
+      <div class="service">
+        <img src="./assets/Images/best quality.svg" alt="icon" class="service__icon" />
+        <p class="service__header">Best Quality</p>
+        <p class="service__text">
+          Not only fast for us quality is also number one
+        </p>
+      </div>
     </div>
   </section>
   <!-- *************** SERVICES SECTION END *************** -->
@@ -114,88 +117,90 @@
   <!-- *************** MENU SECTION START *************** -->
   <section class="section__menu">
     <h3 class="tertiary__header">Our Menu</h3>
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-1.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Sea</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Sea food</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$7</span>
-      </p>
-    </div>
+    <div class="menu__container">
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-1.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Sea</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Sea food</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$7</span>
+        </p>
+      </div>
 
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-2.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Egg</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Boiled Egg</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$6</span>
-      </p>
-    </div>
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-2.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Egg</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Boiled Egg</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$6</span>
+        </p>
+      </div>
 
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-3.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Chicken</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Chicken</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$10</span>
-      </p>
-    </div>
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-3.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Chicken</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Chicken</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$10</span>
+        </p>
+      </div>
 
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-4.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Meat</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Meat</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$9</span>
-      </p>
-    </div>
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-4.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Meat</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Meat</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$9</span>
+        </p>
+      </div>
 
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-5.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Meat</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Steak</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$12</span>
-      </p>
-    </div>
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-5.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Meat</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Steak</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$12</span>
+        </p>
+      </div>
 
-    <div class="food__menu-card">
-      <p class="discount">-25%</p>
-      <img src="./assets/Images/food-menu-6.png" alt="food-image" class="food__menu-img" />
-      <p class="food__menu-rate">
-        <span>Salad</span>
-        <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
-      </p>
-      <div class="food__menu-card__header">Delicous Health Salad</div>
-      <p class="food__menu-card__price">
-        <span class="card__price-span-1">Price</span>
-        <span class="card__price-span-2">$12</span>
-      </p>
+      <div class="food__menu-card">
+        <p class="discount">-25%</p>
+        <img src="./assets/Images/food-menu-4.png" alt="food-image" class="food__menu-img" />
+        <p class="food__menu-rate">
+          <span>Salad</span>
+          <span><img src="./assets/Images/starts.svg" alt="starts" class="stars" /></span>
+        </p>
+        <div class="food__menu-card__header">Delicous Health Meal</div>
+        <p class="food__menu-card__price">
+          <span class="card__price-span-1">Price</span>
+          <span class="card__price-span-2">$12</span>
+        </p>
+      </div>
     </div>
   </section>
   <!-- *************** MENU SECTION END *************** -->
@@ -204,20 +209,39 @@
   <section class="section__testimonials">
     <h3 class="tertiary__header">Testimonials</h3>
     <h2 class="secondary__header">What Our Customers Say About Us</h2>
-
-    <div class="testimonial">
-      <p class="testimonial__text">
-        “Foody is the best. Besides the many and delicious meals, the service is also very good, especially in the very
-        fast delivey. I highly recommend Fudo to you”.
-      </p>
-      <div class="testimonial__author">
-        <img src="./assets/Images/testmonial-1.png" alt="testimonial author image">
-        <div class="testimonial__author-content">
-          <p class="author__name">Thresa Jordan</p>
-          <p class="author__job">Finance Expert</p>
-          <p class="author__review">
-            <img src="./assets/Images/starts.svg" alt="stars"> <span>4.8</span>
-          </p>
+    <div class="testimonials__container">
+      <div class="testimonial">
+        <p class="testimonial__text">
+          “Foody is the best. Besides the many and delicious meals, the service is also very good, especially in the
+          very
+          fast delivey. I highly recommend Fudo to you”.
+        </p>
+        <div class="testimonial__author">
+          <img src="./assets/Images/testmonial-1.png" alt="testimonial author image">
+          <div class="testimonial__author-content">
+            <p class="author__name">Thresa Jordan</p>
+            <p class="author__job">Finance Expert</p>
+            <p class="author__review">
+              <img src="./assets/Images/starts.svg" alt="stars"> <span>4.8</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial__text">
+          “Foody is the best. Besides the many and delicious meals, the service is also very good, especially in the
+          very
+          fast delivey. I highly recommend Fudo to you”.
+        </p>
+        <div class="testimonial__author">
+          <img src="./assets/Images/testmonial-2.png" alt="testimonial author image">
+          <div class="testimonial__author-content">
+            <p class="author__name">Thresa Jordan</p>
+            <p class="author__job">Finance Expert</p>
+            <p class="author__review">
+              <img src="./assets/Images/starts.svg" alt="stars"> <span>4.8</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -227,12 +251,14 @@
   <!-- *************** APP SECTION START*************** -->
   <section class="section__app">
     <div class="app__container">
-      <h3 class="tertiary__header">DOWNLOAD APP</h3>
-      <h3 class="secondary__header">Never Feel Hungry! Download Our Mobile App Enjoy Delcious Food </h3>
-      <p class="app__detail">Discover food wherever and whenever and get your food delivered quickly.</p>
-      <div class="store__images">
-        <a href="#"><img src="./assets/Images/googleplay.svg" alt="playstore image" class="store__img"></a>
-        <a href="#"><img src="./assets/Images/appstore.svg" alt="appstore image" class="store__img"></a>
+      <div class="text-cont">
+        <h3 class="tertiary__header">DOWNLOAD APP</h3>
+        <h3 class="secondary__header">Never Feel Hungry! Download Our Mobile App Enjoy Delcious Food </h3>
+        <p class="app__detail">Discover food wherever and whenever and get your food delivered quickly.</p>
+        <div class="store__images">
+          <a href="#"><img src="./assets/Images/googleplay.svg" alt="playstore image" class="store__img"></a>
+          <a href="#"><img src="./assets/Images/appstore.svg" alt="appstore image" class="store__img"></a>
+        </div>
       </div>
       <img src="./assets/Images/app mockup.png" alt="app mockup" class="app__mockup">
     </div>
@@ -257,6 +283,7 @@
         <li><a href="#" class="footer__col-link">Menu</a></li>
       </ul>
     </nav>
+
     <nav class="footer__col">
       <p class="footer__col-header">Company</p>
       <ul>
@@ -277,6 +304,7 @@
         <li><a href="#" class="footer__col-link">Accessibilty</a></li>
       </ul>
     </nav>
+
     <div class="footer__col">
       <p class="footer__col-header">Get in Touch</p>
       <p class="footer__col-contact-question">Question or feedback?</p>

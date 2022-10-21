@@ -1,5 +1,7 @@
 /* *************** SECTION HERO START  ***************** */
 .section__hero {
+  margin: 0 auto;
+  max-width: 144rem;
   padding: 0 3rem;
   margin-top: 2rem;
   display: flex;
@@ -21,6 +23,7 @@
 .main-desc {
   font-weight: var(--secondary-color);
   font-size: 1.8rem;
+  font-weight: var(--secondary-fw);
   text-align: center;
   color: var(--secondary-color);
   margin-top: 2rem;
@@ -76,10 +79,11 @@
   height: 5rem;
 }
 .customers__header {
-  font-weight: var(--big-fw);
+  display: flex;
+  flex-direction: column;
 }
 .customers__review {
-  font-weight: var(--normal-fw);
+  font-weight: var(--secondary-fw);
   color: var(--tertiary-color);
   text-align: center;
 }
@@ -88,15 +92,21 @@
 /* *************** SECTION SERVICE START  ***************** */
 
 .section__service {
+  margin: 0 auto;
+  max-width: 144rem;
   margin-top: 10rem;
   padding: 0 3rem;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .service {
   margin-top: 5rem;
 }
 
 .service__icon {
-  width: 9rem;
+  width: 7rem;
 }
 .service__header {
   font-size: 2rem;
@@ -113,20 +123,29 @@
 /* *************** SECTION MENU START  ***************** */
 
 .section__menu {
+  margin: 0 auto;
+  max-width: 144rem;
   margin-top: 10rem;
   padding: 7rem 3rem;
   background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  gap: 7rem;
 }
-
+.menu__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem 0;
+}
 .food__menu-card {
   box-shadow: 1px 0 30px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
   padding: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: max-content;
+  border-radius: 1rem;
 }
 .discount {
   font-size: 1.8rem;
@@ -135,11 +154,12 @@
   background-color: var(--primary-color);
   max-width: max-content;
   padding: 1rem 2rem;
-  margin-top: 2rem;
   color: var(--white);
+  border-radius: 0.5rem;
 }
 .food__menu-img {
   margin-top: 3rem;
+  width: 25rem;
 }
 .food__menu-rate {
   display: flex;
@@ -174,8 +194,15 @@
 
 /* *************** SECTION TESTIMONIALS START  ***************** */
 .section__testimonials {
+  margin: 0 auto;
+  max-width: 144rem;
   margin-top: 10rem;
   padding: 0 3rem;
+}
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 .testimonial {
   margin-top: 3rem;
@@ -207,6 +234,8 @@
 
 /* *************** SECTION APP START  ***************** */
 .section__app {
+  margin: 0 auto;
+  max-width: 144rem;
   margin-top: 10rem;
   padding: 0 3rem;
 }
@@ -238,11 +267,14 @@
 
 /* *************** SECTION FOOTER START  ***************** */
 .section__footer {
+  margin: 0 auto;
+  max-width: 144rem;
   padding: 5rem 3rem;
   margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 .footer__logo {
   width: 12rem;
